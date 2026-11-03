@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "source_export_version": "0.8.5-single-file.1",
+  "review_module_version": "0.1.0",
+  "style": "Black line length 79; pycodestyle max line length 79",
+  "python_3_9_grammar": true,
+  "preparation_python": "3.12.14",
+  "all_definitions_have_docstrings": true,
+  "nested_functions": 0,
+  "function_or_class_local_imports": 0,
+  "unit_test_methods": 10,
+  "manufactured_native_layouts": [
+    "ascii",
+    "sonora_bobcat",
+    "sonora_cholla",
+    "sonora_diamondback",
+    "atmo2020_ascii",
+    "ck04_stsci_fits",
+    "phoenix_hires",
+    "atmo2020_stsci_fits",
+    "bt_settl_svo",
+    "sonora_elf_owl_v2",
+    "sonora_flame_skimmer_v1_r3k"
+  ],
+  "manufactured_native_arrays_and_metadata_match_original": true,
+  "scalar_regression_cases": 128,
+  "scalar_regression_max_absolute_difference": 0.0,
+  "pinned_nprime_response_and_manufactured_spectrum_regression": true,
+  "source_file_sha256": "f951511af5a8f80b7b679c49b2deab9e6348f9eef43b665cb47cdf11453036e5",
+  "review_module_sha256": "4cae085cd4fe17181f861f4317bef876c9c7470516eabd3d4fce4e751c15c169",
+  "style_checks_passed": true,
+  "scope": "Analytic/manufactured inputs only. No native atmosphere archives or observed data recomputed; no full-grid physical-accuracy claim.",
+  "not_performed": [
+    "Python 3.9 runtime execution",
+    "real native-model grid recomputation",
+    "GitHub publication",
+    "pyNOMIC merge or image injection"
+  ]
+}

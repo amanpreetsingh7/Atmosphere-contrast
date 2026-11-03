@@ -1,0 +1,9 @@
+{
+  "file": "planet.txt",
+  "format": "ascii",
+  "wavelength_unit": "um",
+  "flux_unit": "W_m2_um",
+  "flux_convention": "surface_flux",
+  "wavelength_frame": "vacuum",
+  "skiprows": 1
+}

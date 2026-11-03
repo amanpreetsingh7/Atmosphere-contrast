@@ -1,0 +1,11 @@
+{
+  "filter_wave_um": [9.0, 11.0, 14.0],
+  "filter_transmission": [1.0, 1.0, 1.0],
+  "sky_wave_um": [9.0, 11.0, 14.0],
+  "sky_transmission": [1.0, 1.0, 1.0],
+  "limits_um": [9.0, 14.0],
+  "metadata": {
+    "wavelength_frame": "vacuum",
+    "description": "Manufactured unit throughput; not the Nprime response."
+  }
+}

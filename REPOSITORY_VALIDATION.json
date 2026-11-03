@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "module_version": "0.1.0",
+  "package_prepared_date": "2026-11-03",
+  "core_module_unchanged_from_review_zip": true,
+  "core_module_sha256": "4cae085cd4fe17181f861f4317bef876c9c7470516eabd3d4fce4e751c15c169",
+  "runtime_python": "3.12.14",
+  "minimum_dependency_tests": {
+    "methods": 13,
+    "status": "passed"
+  },
+  "optional_native_dependency_tests": {
+    "methods": 13,
+    "status": "passed",
+    "manufactured_native_layouts": 11
+  },
+  "analytic_array_example_expected_contrast": 0.05,
+  "manufactured_file_example_expected_contrast": 0.05,
+  "new_file_wrapper_tests_after_final_formatting": {
+    "methods": 3,
+    "status": "passed"
+  },
+  "python_3_9_grammar": true,
+  "all_definitions_have_docstrings": true,
+  "definition_count": 49,
+  "nested_functions": 0,
+  "function_or_class_local_imports": 0,
+  "black_version": "26.10.1",
+  "pycodestyle_version": "2.15.0",
+  "line_length": 79,
+  "style_checks_passed": true,
+  "workflow_yaml_structure_checked": true,
+  "workflow_python_matrix": [
+    "3.9",
+    "3.12"
+  ],
+  "workflow_has_not_run_on_github": true,
+  "json_and_local_document_links_checked": true,
+  "gitignore_behavior_checked": true,
+  "not_performed": [
+    "Python 3.9 runtime execution",
+    "Recomputation using actual native atmosphere archives",
+    "Observational validation",
+    "GitHub publication or remote workflow execution",
+    "Upstream pyNOMIC merge or image injection"
+  ],
+  "scope": "Repository packaging and analytic/manufactured checks. No claim of full-grid physical accuracy or completed app integration."
+}

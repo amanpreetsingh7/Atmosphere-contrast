@@ -1,0 +1,3 @@
+-r requirements.txt
+astropy>=5.3
+netCDF4>=1.6

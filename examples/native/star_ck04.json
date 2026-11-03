@@ -1,0 +1,11 @@
+{
+  "file": "../../models/ckp00_5000.fits",
+  "format": "ck04_stsci_fits",
+  "gravity_column": "g45",
+  "wavelength_frame": "vacuum",
+  "parameters": {
+    "teff_K": 5000.0,
+    "logg_cgs": 4.5,
+    "metallicity_dex": 0.0
+  }
+}

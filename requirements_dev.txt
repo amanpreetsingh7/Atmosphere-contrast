@@ -1,0 +1,4 @@
+-r requirements_native.txt
+# Use Python 3.12 for the reviewed development tools.
+black==26.10.1
+pycodestyle==2.15.0

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite this software and the source atmosphere grids used."
+title: "Atmosphere Contrast"
+type: software
+authors:
+  - family-names: Singh
+    given-names: Amanpreet
+version: 0.1.0
+license: MIT
+abstract: >-
+  Calculate thermal planet-to-star contrasts from emergent surface spectra
+  using explicit filter and atmospheric transmission curves. This review
+  module supplies a scalar brightness ratio for downstream applications.
+keywords:
+  - exoplanets
+  - atmosphere models
+  - synthetic photometry
+  - thermal contrast
+

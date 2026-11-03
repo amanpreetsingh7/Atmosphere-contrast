@@ -1,0 +1,45 @@
+# Python environments and generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Large external scientific inputs and generated outputs
+/models/
+/filterdata/
+/data/
+/cache/
+/archive_cache/
+/results/
+/figures/
+*.fits
+*.fit
+*.fts
+*.nc
+*.h5
+*.hdf5
+*.npz
+*.gz
+*.zip
+
+# Local editor, operating system, and credential files
+.DS_Store
+._*
+__MACOSX/
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
