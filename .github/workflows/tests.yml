@@ -1,0 +1,54 @@
+name: Python checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.12"]
+        dependencies: [minimal, native]
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install minimum dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Install optional native readers
+        if: matrix.dependencies == 'native'
+        run: python -m pip install -r requirements_native.txt
+      - name: Run manufactured-data tests
+        run: python -m unittest discover -v
+      - name: Run the analytic example
+        run: python example_usage.py
+      - name: Run the documented file example
+        run: >-
+          python example_from_files.py
+          --star examples/manufactured/star.json
+          --planet examples/manufactured/planet.json
+          --response-config examples/manufactured/response.json
+          --star-radius-m 2 --planet-radius-m 1
+
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the reviewed formatting tools
+        run: python -m pip install -r requirements_dev.txt
+      - name: Check formatting
+        run: python -m black --check --line-length 79 .
+      - name: Check PEP 8 conventions
+        run: python -m pycodestyle --max-line-length=79 .
+
